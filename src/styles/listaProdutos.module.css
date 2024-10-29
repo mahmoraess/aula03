@@ -1,6 +1,14 @@
 .bloco{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    color: blueviolet;
+    flex-wrap: wrap;
+    column-width: 5cm;
+    justify-content: space-evenly;
+    color: rgb(82, 36, 125);
+}
+
+.bloco li{
+    display: flex;
+    width: 22%;
+    flex-direction: column-reverse;
 }
