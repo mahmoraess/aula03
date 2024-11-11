@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ListarProdutos from "./ListarProdutos";
+import Loading from "./Loading";
 
 export default function Home() {
 
@@ -18,6 +19,12 @@ export default function Home() {
         }
         receberListaProdutos();
 }, []);
+
+if (lista.length === 0) {
+    return (
+        <Loading></Loading>
+    )
+}
 
     return (
       <>
