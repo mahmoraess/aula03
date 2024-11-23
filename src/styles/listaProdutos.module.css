@@ -72,3 +72,27 @@ body {
 .bloco li:hover img {
     transform: scale(1.05); /* Aumenta ligeiramente a imagem */
 }
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(82, 36, 125); ; /* Roxo elegante */
+    color: #ffffff; /* Texto branco */
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #5c2d7a; /* Roxo mais escuro no hover */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+  }
+  
+  button:active {
+    transform: scale(0.95); /* Efeito de clique */
+    background-color: #4a215f; /* Roxo ainda mais escuro no clique */
+  }
+  
