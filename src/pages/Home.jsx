@@ -5,6 +5,7 @@ import Loading from "./Loading";
 export default function Home() {
 
     const [lista, setLista] = useState([]);
+    const [filtro, setFiltro] = useState("");
 
     useEffect(() => {
         
@@ -47,14 +48,27 @@ const orderPriceAsc = () => {
     setLista(listaOrdenada);
   };
 
+  const pesquisar = lista.filter((produto) =>
+        produto.title.toLowerCase().startsWith(filtro.toLowerCase())
+);
+
     return (
       <>
        <h1>★Lista de Produtos★</h1>
+
+       <input 
+            type="text"
+            placeholder="Buscar produto..."
+            className={styles.input}
+            value={filtro}
+            onChange={(e) => setFiltro(e.target.value)} 
+        />
+
        <button onClick={()=> orderAz()} >Az</button>
        <button onClick={()=> orderZa()} >Za</button>
        <button onClick={orderPriceAsc}>Preço: Menor para Maior</button>
       <button onClick={orderPriceDesc}>Preço: Maior para Menor</button>
-       <ListarProdutos produtos={lista}/>
+       <ListarProdutos produtos={pesquisar}/>
     </>
   );
 }
