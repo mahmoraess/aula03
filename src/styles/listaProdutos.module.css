@@ -93,33 +93,33 @@ button {
   }
   
   button:active {
-    transform: scale(0.95); /* Efeito de clique */
-    background-color: #4a215f; /* Roxo ainda mais escuro no clique */
+    transform: scale(0.95); 
+    background-color: #4a215f; 
   }
   /* Estilizando a barra de pesquisa no CSS Module */
 .searchInput {
     width: 100%;
-    max-width: 450px;  /* Ajuste a largura máxima conforme necessário */
-    padding: 12px 15px; /* Espaçamento interno para tornar a barra mais confortável */
+    max-width: 450px; 
+    padding: 12px 15px; 
     font-size: 16px;
-    border-radius: 25px;  /* Borda arredondada */
-    border: 2px solid #ccc;  /* Borda cinza clara */
-    outline: none;  /* Remove a borda padrão ao focar no campo */
-    transition: border 0.3s ease, box-shadow 0.3s ease;  /* Transição suave para borda e sombra */
-    margin-bottom: 20px;  /* Espaçamento inferior */
-    background-color: #f9f9f9;  /* Cor de fundo suave */
+    border-radius: 25px;  
+    border: 2px solid #ccc;  
+    outline: none; 
+    transition: border 0.3s ease, box-shadow 0.3s ease;  
+    margin-bottom: 20px;  
+    background-color: #f9f9f9;  
 }
 
 /* Efeito ao focar no campo de entrada */
 .searchInput:focus {
-    border-color: #9b4dca;  /* Cor roxa ao focar no campo */
-    box-shadow: 0 0 8px rgba(155, 77, 202, 0.6);  /* Sombra suave roxa ao focar */
+    border-color: #9b4dca;  
+    box-shadow: 0 0 8px rgba(155, 77, 202, 0.6);  
 }
 
 /* Estilizando o placeholder para um tom mais suave de roxo */
 .searchInput::placeholder {
-    color: #9b4dca;  /* Cor roxa para o texto do placeholder */
-    font-style: italic;  /* Itálico no placeholder */
+    color: #9b4dca;  
+    font-style: italic;  
 }
 
 
